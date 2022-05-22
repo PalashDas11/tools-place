@@ -1,0 +1,83 @@
+[
+    {
+        "name": "Rol-Air 6-1/2 HP Belt Drive Twin Tank Gas-Powered Air Compressor",
+        "description": "The Rol-Air 6590HMK13S 6 Horsepower Gas-Powered Twin Tank Air Compressor meets the rigorous demands of the serious contractor. Ideal in situations where power is not available or air volume is a problem.",
+        "img": "https://i.ibb.co/hc25pbG/rol-air.jpg",
+        "minimum_order_quantity": 5,
+        "available_quantity": 10,
+        "quantity": 15,
+        "price": 1260.00
+    },
+    {
+        "name": "DEWALT 1.6 HP, 15 Gallon, Portable Workshop Compressor",
+        "description": "The DeWalt heavy-duty 200 PSI portable air compressor is a powerful yet quiet portable air compressor with a quick recovery time and an oil-free, maintenance-free pump that can run with an extension cord",
+        "img": "https://i.ibb.co/BPSqj0R/p2-1-300x300.jpg",
+        "minimum_order_quantity": 8,
+        "available_quantity": 30,
+        "quantity": 21,
+        "price": 420.00
+    },
+    {
+        "name": "Milwaukee 1-5/8 Ratcheting Pipe Cutter",
+        "description": "The Milwaukee 1-5/8 ratcheting pipe cutter is engineered for straight, easy cuts. The piece point blade is designed to accurately pierce without crushing or cracking the pipe. The blade is constructed with stainless steel for long life and a durable cutting edge.",
+        "img": "https://i.ibb.co/3fZM6dW/milwaukee.jpg",
+        "minimum_order_quantity": 10,
+        "available_quantity": 30,
+        "quantity": 18,
+        "price": 57.99
+    },
+    {
+        "name": "Makita 18V LXT Sub-Compact Brushless 2-Piece Combo Kit (2.0 Ah)",
+        "description": "Driver-Drill weighs only 2.8 pounds with battery for reduced operator fatigue, compact and ergonomic design at only 6-3/8 inches long, and BL Brushless Motor delivers 350 inch pounts of Max Torque.Reverse Rotation Auto-Stop Mode stops rotation and impact when fastener is loosened adequately",
+        "img": "https://i.ibb.co/cLLdmjS/Makita.jpg",
+        "minimum_order_quantity": 6,
+        "available_quantity": 30,
+        "quantity": 14,
+        "price": 234.55
+    },
+    {
+        "name": "Hitachi / Metabo 5.5 HP 8-Gallon Gas Powered Wheelbarrow Air Compressor",
+        "description": "Same tools. New name. Hitachi Power Tools has renamed to Metabo HPT Solid cast iron cylinder provides industry recognized premium material for long life, consistent compression and low oil carryover Powered by a professional grade Honda GX engine",
+        "img": "https://i.ibb.co/B6txMNn/Hitacimetabo.jpg",
+        "minimum_order_quantity": 4,
+        "available_quantity": 35,
+        "quantity": 41,
+        "price": 119.99
+    },
+    {
+        "name": "Hitachi / Metabo HPT 16 Gauge Pneumatic Finish Nailer with Air Duste",
+        "description": "",
+        "img": "https://i.ibb.co/QNbLtNg/hitachi.jpg",
+        "minimum_order_quantity": 8,
+        "available_quantity": 40,
+        "quantity": 20,
+        "price": 99.99
+    },
+    {
+        "name": "Duo-Fast Industrial Pneumatic Nailer with DuoGlide Roller Base with Mallet",
+        "description": "The Duo-Fast Industrial Pneumatic Nailer with DuoGlide Roller Base with Mallet (FM250ALR) is engineered for heavy duty use with innovative features such as it's reinforced high strength aluminum head casing. It is built with tight tolerances for reduced wear and smooth operation.",
+        "img": "https://i.ibb.co/zNqLjZj/Duo.jpg",
+        "minimum_order_quantity": 7,
+        "available_quantity": 40,
+        "quantity": 15,
+        "price": 199.77
+    },
+    {
+        "name": "DEWALT 4 Piece Wood Chisel Set",
+        "description": "Hardened, tempered chrome carbon-steel blade for edge retention Hardened strike cap for durability Blade lacquered for corrosion protection Ergonomically designed bi-material handle for comfort and protectionSPECIFICATIONS: Handle Material: Bi-Material Handle Length: 5.25in Chisel Tip Style: ",
+        "img": "https://i.ibb.co/G5ctYgz/dewalt-60.jpg",
+        "minimum_order_quantity": 10,
+        "available_quantity": 40,
+        "quantity": 11,
+        "price": 89.99
+    },
+    {
+        "name": "DEWALT 16 Gauge 2-1/2 Pnematic Brad Nailer Kit",
+        "description": "The D51257K ushers in the next generation of DEWALT finish nailers. Making use of Sealed Lube Dual Technology, allows the unit's motor to work as either an oil free or an oil lubricated unit. Tool-free features include: an adjustable belt hook, nail depth adjustment, jam clearing, and a 360° rotating exhaust cap",
+        "img": "https://i.ibb.co/3pc74fH/dewalt-20.jpg",
+        "minimum_order_quantity": 8,
+        "available_quantity": 50,
+        "quantity": 19,
+        "price": 128.99
+    }
+]

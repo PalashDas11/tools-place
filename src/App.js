@@ -10,6 +10,7 @@ import NotFound from './component/NotFound/NotFound';
 import RequireAuth from './component/RequireAuth/RequireAuth';
 import SignUp from './component/SignUp/SignUp';
 import Tools from './component/Tools/Tools';
+import ToolSingleItem from './component/Tools/ToolSingleItem';
 
 function App() {
   return (
@@ -20,6 +21,11 @@ function App() {
        <Route path="/tools" element ={
          <RequireAuth>
        <Tools/>
+       </RequireAuth>
+       }></Route>
+       <Route path="/toolDetails/:toolId" element ={
+         <RequireAuth>
+       <ToolSingleItem></ToolSingleItem>
        </RequireAuth>
        }></Route>
        <Route path="/BusinessSummary" element ={<Bussiness/>}></Route>
