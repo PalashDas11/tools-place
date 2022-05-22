@@ -1,0 +1,32 @@
+.banner-img{
+    background-image: url(../../img/banner.jpg);
+    max-width: 100%;
+}
+.content{
+    width: 100%;
+    padding-left: 50px;
+    color: white;
+    display: flex;
+    text-align: left;
+    align-items: flex-start;
+    
+   
+}
+.custom-btn{
+    padding: 10px 23px;
+    color:black;
+    /* color: #7bdcb5; */
+    background-color:#fcb900;
+    font-size: 1rem;
+    border-radius: 3px;
+    transition: .5s ease-in-out;
+}
+.custom-btn:hover{
+   
+    padding: 10px 23px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid #fcb900;
+    font-size: 1rem;
+    border-radius: 3px;
+}
