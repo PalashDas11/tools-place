@@ -19,6 +19,7 @@ const Header = () => {
         <li><Link to="/tools">Tools</Link></li>
         <li><Link to="/BusinessSummary">Business Summary</Link></li>
         <li><Link to="/review">Reviews</Link></li>
+        <li><Link to="/blog">Blog</Link></li>
         <li><Link to="/about">My Protfolio</Link></li>
         <li>{user ? <button className="btn btn-ghost" onClick={logout} >Sign Out</button> : <Link to="/login">Login</Link>}</li>
 

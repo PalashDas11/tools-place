@@ -1,5 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import Blog from './component/Blog/Blog';
 import Bussiness from './component/BussinessSummary/Bussiness';
 import Footer from './component/Header/Footer';
 import Header from './component/Header/Header';
@@ -11,7 +12,7 @@ import Tools from './component/Tools/Tools';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Header></Header>
      <Routes>
        <Route path="/" element ={<Home/>}></Route>
@@ -19,6 +20,7 @@ function App() {
        <Route path="/BusinessSummary" element ={<Bussiness/>}></Route>
        <Route path="/login" element ={<Login/>}></Route>
        <Route path="/signup" element ={<SignUp/>}></Route>
+       <Route path="/blog" element ={<Blog/>}></Route>
        <Route path="*" element ={<NotFound/>}></Route>
      </Routes>
      <Footer></Footer>
