@@ -1,0 +1,17 @@
+.custom-form{
+        width: 50%;
+        margin: 0 auto;
+
+}
+.custom-form input{
+    outline: auto;
+    padding: 5px;
+    margin: 5px;
+    font-weight: 500;
+
+}
+@media screen and (max-width: 768px){
+    .custom-form{
+        width: 80%;
+    }
+}
