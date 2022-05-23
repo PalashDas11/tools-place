@@ -4,6 +4,10 @@ import { ToastContainer  } from 'react-toastify';
 import './App.css';
 import Blog from './component/Blog/Blog';
 import Bussiness from './component/BussinessSummary/Bussiness';
+import Dashboard from './component/Dashboard/Dashboard';
+import MyOder from './component/Dashboard/MyOder';
+import MyProfile from './component/Dashboard/MyProfile';
+import Review from './component/Dashboard/Review';
 import Footer from './component/Header/Footer';
 import Header from './component/Header/Header';
 import Home from './component/Home/Home';
@@ -33,7 +37,12 @@ function App() {
        </RequireAuth>
        }></Route>
 
-       <Route path="/dashboard"></Route>
+       <Route path="/dashboard" element ={<RequireAuth><Dashboard/></RequireAuth>}>
+         <Route index element ={<MyOder></MyOder>}></Route>
+         <Route path="review" element={<Review></Review>}></Route>
+         <Route path="profile" element={<MyProfile></MyProfile>}></Route>
+
+       </Route>
        <Route path="/BusinessSummary" element ={<Bussiness/>}></Route>
        <Route path="/login" element ={<Login/>}></Route>
        <Route path="/signup" element ={<SignUp/>}></Route>

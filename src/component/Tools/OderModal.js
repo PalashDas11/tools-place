@@ -48,6 +48,7 @@ const OderModal = () => {
         .then(res => res.json())
         .then(result => {
             toast('order added')
+            setSingleProduct(null)
         })
     }
     return (
