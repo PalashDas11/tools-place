@@ -13,8 +13,8 @@ const Tools = () => {
     }, [])
     return (
     
-          <div className='mt-8'>
-              <h2 className="text-2xl font-bold text-center py-4">Tools place</h2>
+          <div className='mt-8 p-5'>
+              <h2 className="text-2xl font-bold text-left uppercase py-4">See our  <span className="text-primary">tools collection -</span></h2>
               
                 <div className='grid md:grid-cols-2 lg:grid-cols-3 sm:grid-cols-1 gap-3  '>
             {
