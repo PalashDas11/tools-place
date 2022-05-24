@@ -37,7 +37,6 @@ const OderModal = () => {
             phone: event.target?.phone.value,
             address: event.target?.address.value,
         }
-        console.log(oderProduct);
         fetch('http://localhost:5000/order', {
             method:'POST',
             headers:{
@@ -47,7 +46,12 @@ const OderModal = () => {
         })
         .then(res => res.json())
         .then(result => {
-            toast('order added')
+            if(result.success !== false){
+                toast(`Order done successfully `)
+            }
+            else{
+                toast.error(`Already have and Order`)
+            }
             
         })
     }
