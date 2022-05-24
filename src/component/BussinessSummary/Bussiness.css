@@ -1,0 +1,8 @@
+@media screen and (max-width: 639px) {
+    .custom-bussiness {
+      margin:auto;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr );
+    
+    }
+  }

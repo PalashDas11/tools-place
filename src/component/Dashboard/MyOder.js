@@ -55,7 +55,7 @@ const MyOder = () => {
     }
     return (
         <div>
-            <h2>My Appointments: {orders.length}</h2>
+            <h2>My Order: {orders.length}</h2>
             <div className="overflow-x-auto">
                 <table className="table w-full">
                     <thead>

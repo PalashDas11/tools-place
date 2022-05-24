@@ -13,7 +13,10 @@ const Tools = () => {
     }, [])
     return (
     
-            <div className='grid md:grid-cols-2 lg:grid-cols-3 sm:grid-cols-1 gap-3 '>
+          <div className='mt-8'>
+              <h2 className="text-2xl font-bold text-center py-4">Tools place</h2>
+              
+                <div className='grid md:grid-cols-2 lg:grid-cols-3 sm:grid-cols-1 gap-3  '>
             {
                 tools.map(tool => <ToolDetails 
                     tool ={tool} 
@@ -22,6 +25,7 @@ const Tools = () => {
             }    
            
         </div>
+          </div>
     );
 };
 
