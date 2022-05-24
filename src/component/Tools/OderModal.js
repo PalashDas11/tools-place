@@ -15,7 +15,7 @@ const OderModal = () => {
 
     const [singleProduct, setSingleProduct] = useState({})
 
-    const { _id, name, quantity } = singleProduct;
+    const { name, quantity } = singleProduct;
     useEffect(() => {
         const url = `http://localhost:5000/purchase/${toolId}`
         fetch(url)
@@ -48,7 +48,7 @@ const OderModal = () => {
         .then(res => res.json())
         .then(result => {
             toast('order added')
-            setSingleProduct(null)
+            
         })
     }
     return (
