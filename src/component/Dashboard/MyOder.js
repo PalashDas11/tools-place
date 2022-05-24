@@ -1,12 +1,11 @@
 import { signOut } from 'firebase/auth';
 import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import auth from '../../firebase.init';
 
 const MyOder = () => {
-
 
     const [orders, setOrder] = useState([]);
     const [user] = useAuthState(auth);
@@ -57,8 +56,8 @@ const MyOder = () => {
     return (
         <div>
             <h2>My Appointments: {orders.length}</h2>
-            <div class="overflow-x-auto">
-                <table class="table w-full">
+            <div className="overflow-x-auto">
+                <table className="table w-full">
                     <thead>
                         <tr>
                             <th></th>
@@ -72,15 +71,25 @@ const MyOder = () => {
                     <tbody>
 
                         {
-                            orders.map((a, index) => <tr>
+                            orders.map((a, index) => <tr key={a._id}>
                                 <th>{index + 1}</th>
                                 <td>{a.customerName}</td>
                                 <td>{a.productName}</td>
                                 <td>{a.productQuantity}</td>
                                 <td>{a.address}</td>
                                 <td>
-                                    <button class="btn btn-sm mr-2">payment</button>
-                                    <button class="btn btn-sm bg-red-700" onClick={() => handleDelete(a._id)} >Delete</button>
+                                    {(a.productPrice && !a.paid) && <Link to ={`/dashboard/payment/${a._id}`}><button className="btn btn-sm mr-2">payment</button></Link> }
+                                    {(a.productPrice && a.paid) ?
+                                   
+                                       ( <button className="btn btn-sm mr-2">paid</button>):
+                                        <button className="btn btn-sm bg-red-700" onClick={() => handleDelete(a._id)} >Delete</button>                    
+                                    }
+                                    {(a.productPrice && a.paid) &&
+                                   
+                                     <p>Transaction id: <span className='text-success'>{a.transactionId}</span></p>                    
+                                    }
+                                   
+                                    
                                 </td>
                             </tr>)
                         }

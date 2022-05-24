@@ -15,7 +15,7 @@ const OderModal = () => {
 
     const [singleProduct, setSingleProduct] = useState({})
 
-    const { name, quantity } = singleProduct;
+    const { name, quantity, price } = singleProduct;
     useEffect(() => {
         const url = `http://localhost:5000/purchase/${toolId}`
         fetch(url)
@@ -31,6 +31,7 @@ const OderModal = () => {
        
         const oderProduct = {
             productName: name,
+            productPrice: price,
             productQuantity: quantity,
             customerEmail: user.email,
             customerName: user.displayName,
@@ -50,7 +51,7 @@ const OderModal = () => {
                 toast(`Order done successfully `)
             }
             else{
-                toast.error(`Already have and Order`)
+                toast.error(`Already have an Order`)
             }
             
         })
@@ -66,6 +67,9 @@ const OderModal = () => {
                 <input type="text" name="name" disabled value={user?.displayName || ''} className="input input-bordered w-full max-w-xs" />
                  <label htmlFor="">User Eamil:</label>
                 <input type="email" name="email" disabled value={user?.email || ''} className="input input-bordered w-full max-w-xs" />
+                <label htmlFor="">Product Price:</label>
+
+                <input type="number" name="name" disabled value={price} className="input input-bordered w-full max-w-xs" />
                  <label htmlFor="">Product Quantity:</label>
                 <input type="number" name="email" disabled value={ quantity|| ''} className="input input-bordered w-full max-w-xs" />
                 <label htmlFor="">Phone Number:</label>

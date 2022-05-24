@@ -7,6 +7,7 @@ import Bussiness from './component/BussinessSummary/Bussiness';
 import Dashboard from './component/Dashboard/Dashboard';
 import MyOder from './component/Dashboard/MyOder';
 import MyProfile from './component/Dashboard/MyProfile';
+import Payment from './component/Dashboard/Payment';
 import Review from './component/Dashboard/Review';
 import Footer from './component/Header/Footer';
 import Header from './component/Header/Header';
@@ -41,6 +42,7 @@ function App() {
          <Route index element ={<MyOder></MyOder>}></Route>
          <Route path="review" element={<Review></Review>}></Route>
          <Route path="profile" element={<MyProfile></MyProfile>}></Route>
+         <Route path="payment/:id" element={<Payment></Payment>}></Route>
 
        </Route>
        <Route path="/BusinessSummary" element ={<Bussiness/>}></Route>
