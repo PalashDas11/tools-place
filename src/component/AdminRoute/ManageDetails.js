@@ -1,28 +1,45 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import ProductManage from './ProductManage';
 
-const ManageDetails = ({manage}) => {
-    const {  name, description, price, img, quantity, available_quantity, minimum_order_quantity } = manage;
+const ManageDetails = () => {
+   
+    const [tools, setTools] = useState([])
+    useEffect(() => {
+        fetch('http://localhost:5000/tools')
+            .then(res => res.json())
+            .then(data => setTools(data))
+    }, [])
+   
+    const handleDelete = id => {
+        const confirm = window.confirm("Are you sure want to delete?");
+         if(confirm){
+             console.log('deleted id ', id);
+             fetch(`http://localhost:5000/tools/${id}`, {
+                 method: 'DELETE',
+                 
+             })
+             .then(res => res.json())
+             .then(data => {
+                console.log('data deleted');
+                const reamining = tools.filter(tool => tool._id !== id);
+                setTools(reamining);
+             })
+         }
+    }
     return (
-        <div className="custom-card-res">
-            <div className="card card-compact w-80 bg-base-100 shadow-xl sm:mx-auto custom-card-res ">
+        <div className='mt-8 p-5'>
+            <h2 className="text-2xl font-bold text-left uppercase py-4">See our  <span className="text-primary">tools collection -</span></h2>
 
-                <figure><img className="w-full" src={img} alt="" /></figure>
-
-                <div className="card-body ">
-                    <h2 className="text-xl font-semibold">Name: {name}</h2>
-                    <p> {description}</p>
-                    <p>Quantity: {quantity}</p>
-                    <p>Available quantity: {available_quantity}</p>
-                    <p>Minimum order quantiy: {minimum_order_quantity}</p>
-                    <h2 className='text-2xl font-bold text-primary'>${price}</h2>
-                    {/* <div className='card-action'>
-                        <button className="btn btn-primary">purchase</button>
-                    </div> */}
-                   
-                </div>
+            <div className='grid md:grid-cols-2 lg:grid-cols-3 sm:grid-cols-1 gap-3  '>
+                {
+                    tools.map(tool => <ProductManage
+                        tool={tool}
+                        key={tool._id}
+                        handleDelete = {()=>handleDelete(tool._id)}
+                    ></ProductManage>)
+                }
+             
             </div>
-        
-
         </div>
     );
 };

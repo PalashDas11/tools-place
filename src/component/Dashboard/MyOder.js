@@ -8,11 +8,8 @@ import auth from '../../firebase.init';
 const MyOder = () => {
 
     const [orders, setOrder] = useState([]);
-    console.log(orders);
     const [user] = useAuthState(auth);
     const navigate = useNavigate();
-    console.log(user);
-
     useEffect(() => {
         if (user) {
             fetch(`http://localhost:5000/order?customerEmail=${user.email}`, {
@@ -57,7 +54,8 @@ const MyOder = () => {
     }
     return (
         <div>
-            <h2>My Order: {orders.length}</h2>
+            <h2 className='text-2xl font-bold text-left  py-4'>My Order: {orders.length}</h2>
+            
             <div className="overflow-x-auto">
                 <table className="table w-full">
                     <thead>

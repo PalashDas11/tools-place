@@ -2,7 +2,9 @@ import { Route, Routes } from 'react-router-dom';
 import { ToastContainer  } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
 import './App.css';
+import AddProduct from './component/AdminRoute/AddProduct';
 import ManageAll from './component/AdminRoute/ManageAll';
+import ManageDetails from './component/AdminRoute/ManageDetails';
 import ProductManage from './component/AdminRoute/ProductManage';
 import Blog from './component/Blog/Blog';
 import Bussiness from './component/BussinessSummary/Bussiness';
@@ -48,7 +50,8 @@ function App() {
          <Route path="profile" element={<MyProfile></MyProfile>}></Route>
          {/* admin  */}
          <Route path="manage" element={<ManageAll></ManageAll>}></Route>
-         <Route path="productManage" element={<ProductManage></ProductManage>}></Route>
+         <Route path="productManage" element={<ManageDetails></ManageDetails>}></Route>
+         <Route path="addProduct" element={<AddProduct></AddProduct>}></Route>
 
          {/* admin  */}
          <Route path="users" element={<RequireAdmin><User></User></RequireAdmin>}></Route>
