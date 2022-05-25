@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faUser} from '@fortawesome/free-solid-svg-icons';
+
 import { signOut } from 'firebase/auth';
 import React from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
@@ -24,7 +27,7 @@ const Header = () => {
         {
             user && <li><Link to="/dashboard">Dashboard</Link></li>
         }
-        <li>{user ? <button className="btn btn-ghost" onClick={logout} >Sign Out</button> : <Link to="/login">Login</Link>}</li>
+        <li>{user ? <button className="btn btn-ghost " onClick={logout} >Sign Out  <FontAwesomeIcon icon={faUser}></FontAwesomeIcon></button> : <Link to="/login">Login <FontAwesomeIcon icon={faUser}></FontAwesomeIcon> </Link>}</li>
 
     </>
     return (
