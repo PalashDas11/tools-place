@@ -3,7 +3,7 @@ import { useForm } from 'react-hook-form';
 import { toast } from 'react-toastify';
 
 const AddProduct = () => {
-    const { register, handleSubmit} = useForm();
+    const { register, handleSubmit, reset} = useForm();
 
     const onSubmit = data => {
         const url = `http://localhost:5000/tools`;
@@ -17,6 +17,7 @@ const AddProduct = () => {
         .then(res => res.json())
         .then(data => {
            toast('Added successfull')
+           
         })
     }
 
