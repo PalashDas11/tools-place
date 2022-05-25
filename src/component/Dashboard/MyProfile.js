@@ -2,6 +2,7 @@ import React from 'react';
 import './Myprofile.css';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
+import avatar from "../../img/user.png"
 
 const MyProfile = () => {
     const [user] = useAuthState(auth)
@@ -9,7 +10,14 @@ const MyProfile = () => {
     return (
         <div className="">
             <div className="profile-img">
-                <img src={user?.reloadUserInfo?.photoUrl} alt="" />
+               {
+                   user?.reloadUserInfo?.photoUrl ? <>
+                   <img src={user?.reloadUserInfo?.photoUrl} alt="" />
+                   </>:
+                   <>
+                   <img src={avatar} alt="" srcset="" />
+                   </>
+               } 
             </div>
             <div className="md:w-1/2 mx-auto pt-10">
                 <h2 className="text-xl font-semibold pb-5">Name-:  {user?.reloadUserInfo.displayName}</h2>

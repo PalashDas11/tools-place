@@ -9,6 +9,7 @@ import auth from '../../firebase.init';
 import './Header.css'
 
 
+
 const Header = () => {
     const [user] = useAuthState(auth);
     const logout = () => {
@@ -20,8 +21,6 @@ const Header = () => {
     const menuItems = <>
         <li><Link to="/">Home</Link></li>
         <li><Link to="/tools">Tools</Link></li>
-       
-        <li><Link to="/review">Reviews</Link></li>
         <li><Link to="/blog">Blog</Link></li>
         <li><Link to="/about">My Protfolio</Link></li>
         {
