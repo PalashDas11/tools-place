@@ -72,7 +72,7 @@ const OderModal = () => {
 
                 <input type="number" name="name" disabled value={price} className="input input-bordered w-full max-w-xs" />
                  <label htmlFor="">Product Quantity:</label>
-                <input type="number" name="email" disabled value={ quantity|| ''} className="input input-bordered w-full max-w-xs" />
+                <input type="number" name="email" value={ quantity|| ''} className="input input-bordered w-full max-w-xs" />
                 <label htmlFor="">Phone Number:</label>
                 <input type="text" name="phone" placeholder="Phone Number" className="input input-bordered w-full max-w-xs" />
                 <label htmlFor="">Home Address:</label>
