@@ -1,17 +1,8 @@
+import React from 'react';
 
-import './ToolDetails.css'
-import {useNavigate } from 'react-router-dom';
-
-const ToolDetails = ({ tool }) => {
-    // console.log(tool);  
-    const { _id, name, description, price, img, quantity, available_quantity, minimum_order_quantity } = tool;
-
-    const navigate = useNavigate();
-    const navigateId = id => {
-        navigate(`/toolDetails/${id}`)
-    }
+const ManageDetails = ({manage}) => {
+    const {  name, description, price, img, quantity, available_quantity, minimum_order_quantity } = manage;
     return (
-
         <div className="custom-card-res">
             <div className="card card-compact w-80 bg-base-100 shadow-xl sm:mx-auto custom-card-res ">
 
@@ -24,9 +15,9 @@ const ToolDetails = ({ tool }) => {
                     <p>Available quantity: {available_quantity}</p>
                     <p>Minimum order quantiy: {minimum_order_quantity}</p>
                     <h2 className='text-2xl font-bold text-primary'>${price}</h2>
-                    <div className='card-action'>
-                        <button className="btn btn-primary" onClick={() =>navigateId(_id)}>purchase</button>
-                    </div>
+                    {/* <div className='card-action'>
+                        <button className="btn btn-primary">purchase</button>
+                    </div> */}
                    
                 </div>
             </div>
@@ -36,4 +27,4 @@ const ToolDetails = ({ tool }) => {
     );
 };
 
-export default ToolDetails;
+export default ManageDetails;

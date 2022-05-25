@@ -20,10 +20,10 @@ const Dashboard = () => {
                   
                     { admin ?<>
                         <li><Link to="/dashboard/users">All Users</Link></li>
-                        <li><Link to="/dashboard/users">My Profile</Link></li>
-                        <li><Link to="/dashboard/addDoctor">Manage All Orders</Link></li>
+                        <li><Link to="/dashboard/AdminProfile">My Profile</Link></li>
+                        <li><Link to="/dashboard/manage">Manage All Orders</Link></li>
                         <li><Link to="/dashboard/manageDoctor">Add A Product</Link></li>
-                        <li><Link to="/dashboard/manageDoctor">Manage Products</Link></li>
+                        <li><Link to="/dashboard/productManage">Manage Products</Link></li>
                     </>
                     :
                     <>

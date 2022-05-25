@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from 'react';
-import ToolDetails from './ToolDetails';
+import ManageDetails from './ManageDetails';
 
 
 
 
 const Tools = () => {
-    const [tools, setTools] = useState([])
+    const [manages, setManage] = useState([])
     useEffect(() => {
         fetch('http://localhost:5000/tools')
             .then(res => res.json())
-            .then(data => setTools(data))
+            .then(data => setManage(data))
     }, [])
     return (
 
@@ -18,13 +18,13 @@ const Tools = () => {
 
             <div className='grid md:grid-cols-2 lg:grid-cols-3 sm:grid-cols-1 gap-3  '>
                 {
-                    tools.map(tool => <ToolDetails
-                        tool={tool}
-                        key={tool._id}
-                    ></ToolDetails>)
+                    manages.map(manage => <ManageDetails
+                        manage={manage}
+                        key={manage._id}
+                    ></ManageDetails>)
                 }
-             
             </div>
+
         </div>
     );
 };
