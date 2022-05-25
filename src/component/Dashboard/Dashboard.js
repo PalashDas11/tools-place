@@ -20,7 +20,7 @@ const Dashboard = () => {
                   
                     { admin ?<>
                         <li><Link to="/dashboard/users">All Users</Link></li>
-                        <li><Link to="/dashboard/AdminProfile">My Profile</Link></li>
+                        <li><Link to="/dashboard/profile">My Profile</Link></li>
                         <li><Link to="/dashboard/manage">Manage All Orders</Link></li>
                         <li><Link to="/dashboard/addProduct">Add A Product</Link></li>
                         <li><Link to="/dashboard/productManage">Manage Products</Link></li>

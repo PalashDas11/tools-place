@@ -15,7 +15,7 @@ const Tools = () => {
     return (
 
         <div className='mt-8 p-5'>
-            <h2 className="text-2xl font-bold text-left uppercase py-4">See our  <span className="text-primary">tools collection -{manages.length}</span></h2>
+            <h2 className="text-2xl font-bold text-left uppercase py-4">See our  <span className="text-primary"> users order :{manages.length}</span></h2>
 
         
 

@@ -52,9 +52,9 @@ function App() {
          <Route path="manage" element={<ManageAll></ManageAll>}></Route>
          <Route path="productManage" element={<ManageDetails></ManageDetails>}></Route>
          <Route path="addProduct" element={<AddProduct></AddProduct>}></Route>
+         <Route path="users" element={<RequireAdmin><User></User></RequireAdmin>}></Route>
 
          {/* admin  */}
-         <Route path="users" element={<RequireAdmin><User></User></RequireAdmin>}></Route>
          <Route path="payment/:id" element={<Payment></Payment>}></Route>
 
        </Route>
