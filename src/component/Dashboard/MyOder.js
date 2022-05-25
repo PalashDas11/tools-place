@@ -8,8 +8,10 @@ import auth from '../../firebase.init';
 const MyOder = () => {
 
     const [orders, setOrder] = useState([]);
+    console.log(orders);
     const [user] = useAuthState(auth);
-    const navigate = useNavigate()
+    const navigate = useNavigate();
+    console.log(user);
 
     useEffect(() => {
         if (user) {

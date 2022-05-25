@@ -9,11 +9,13 @@ import MyOder from './component/Dashboard/MyOder';
 import MyProfile from './component/Dashboard/MyProfile';
 import Payment from './component/Dashboard/Payment';
 import Review from './component/Dashboard/Review';
+import User from './component/Dashboard/User';
 import Footer from './component/Header/Footer';
 import Header from './component/Header/Header';
 import Home from './component/Home/Home';
 import Login from './component/Login/Login';
 import NotFound from './component/NotFound/NotFound';
+import RequireAdmin from './component/RequireAuth/RequireAdmin';
 import RequireAuth from './component/RequireAuth/RequireAuth';
 import SignUp from './component/SignUp/SignUp';
 import OderModal from './component/Tools/OderModal';
@@ -42,6 +44,7 @@ function App() {
          <Route index element ={<MyOder></MyOder>}></Route>
          <Route path="review" element={<Review></Review>}></Route>
          <Route path="profile" element={<MyProfile></MyProfile>}></Route>
+         <Route path="users" element={<RequireAdmin><User></User></RequireAdmin>}></Route>
          <Route path="payment/:id" element={<Payment></Payment>}></Route>
 
        </Route>
