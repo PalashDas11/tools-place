@@ -35,11 +35,10 @@ const MyOder = () => {
 
 
     const handleDelete = id => {
-        console.log('id no: ', id);
+  
         const confirm = window.confirm("Are you sure want to delete?");
         if (confirm) {
             const url = `http://localhost:5000/order/${id}`
-            console.log(url);
             fetch(url, {
                 method: 'DELETE'
             })

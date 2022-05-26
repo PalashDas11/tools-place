@@ -4,6 +4,7 @@ import ReviewDetails from '../Dashboard/ReviewDetails';
 import Hero from '../Hero/Hero';
 import Tools from '../Tools/Tools';
 import Category from './Category';
+import Extra from './Extra';
 
 const Home = () => {
     return (
@@ -13,6 +14,7 @@ const Home = () => {
             <Bussiness></Bussiness>
             <ReviewDetails></ReviewDetails>
             <Category></Category>
+            <Extra></Extra>
            
         </div>
     );
