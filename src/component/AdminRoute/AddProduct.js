@@ -6,7 +6,7 @@ const AddProduct = () => {
     const { register, handleSubmit, reset} = useForm();
 
     const onSubmit = data => {
-        const url = `http://localhost:5000/tools`;
+        const url = `https://salty-scrubland-12544.herokuapp.com/tools`;
         fetch(url, {
             method: 'POST', 
             headers: {

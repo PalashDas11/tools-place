@@ -11,7 +11,9 @@ const MyProtflio = () => {
                 <p className='text-md'>Hi, Welcome to About page- My name is Palash Das, I'm a Full Stack developer.I includes includes designing user interactions on websites, developing servers and databases for website functionality and coding for mobile platforms. Developing front end website architecture and user interaction on web page. I also creating servers and databases for functionality, designing and developing APIs. And Using Mongodb Database. I Ensure responsiveness of web applications for mobile and tablet. </p>
                 <p><span className='text-lg font-semibold'>My Skills</span> : HTML, CSS, CSS framwork(Bootstrap , tailwind css) Javascript, React Javascript, Node js, firebase, Mongodb.   </p>
                 <p className='pt-6 font-bold'>Here my some website Link: - <br /></p>
-                <button>----</button>
+                <button>https://omega-grocery.web.app/</button><br />
+                <button>https://fitcoach.netlify.app/</button><br />
+                <button>https://delicate-palmier-ff73c1.netlify.app/</button><br />
             </div>
 
         </div>

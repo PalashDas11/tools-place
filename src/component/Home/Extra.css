@@ -14,3 +14,11 @@
     border: 2px solid #fcb900;
     padding: 5px;
 }
+@media screen and (max-width: 639px) {
+    .custom-w {
+      width: 90%;
+      
+      margin: 0 auto;
+    
+    }
+  }

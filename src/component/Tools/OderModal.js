@@ -19,7 +19,7 @@ const OderModal = () => {
 
     const { name, quantity, price, minimum_order_quantity, available_quantity } = singleProduct;
     useEffect(() => {
-        const url = `http://localhost:5000/purchase/${toolId}`
+        const url = `https://salty-scrubland-12544.herokuapp.com/purchase/${toolId}`
         fetch(url)
             .then(res => res.json())
             .then(data => {
@@ -44,7 +44,7 @@ const OderModal = () => {
 
         if ((inputQuantity >= minimum_order_quantity) && (available_quantity >= inputQuantity)) {
             
-            fetch('http://localhost:5000/order', {
+            fetch('https://salty-scrubland-12544.herokuapp.com/order', {
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json'

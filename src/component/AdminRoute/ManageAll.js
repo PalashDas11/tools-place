@@ -8,7 +8,7 @@ import ManageDetails from './ManageDetails';
 const Tools = () => {
     const [manages, setManage] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/manage')
+        fetch('https://salty-scrubland-12544.herokuapp.com/manage')
             .then(res => res.json())
             .then(data => setManage(data))
     }, [])

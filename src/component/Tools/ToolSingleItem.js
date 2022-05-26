@@ -14,7 +14,7 @@ const ToolSingleItem = () => {
     }
 
    useEffect(() =>{
-       const url = `http://localhost:5000/toolDetails/${toolId}`
+       const url = `https://salty-scrubland-12544.herokuapp.com/toolDetails/${toolId}`
        fetch(url)
        .then(res => res.json())
        .then(data => setSingleTool(data))

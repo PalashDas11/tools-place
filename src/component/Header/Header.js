@@ -40,7 +40,7 @@ const Header = () => {
                         {menuItems}
                     </ul>
                 </div>
-                <div><a className="text-3xl font-bold ml-5">Tools Place</a></div>
+                <div className='logo-res'><Link to="/" className="text-2xl font-bold ml-5">Tools Place</Link></div>
 
             </div>
             <div className="navbar-center hidden lg:flex">

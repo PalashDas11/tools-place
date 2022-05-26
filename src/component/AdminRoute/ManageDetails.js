@@ -6,7 +6,7 @@ const ManageDetails = () => {
 
     const [tools, setTools] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/tool', {
+        fetch('https://salty-scrubland-12544.herokuapp.com/tool', {
             method: 'GET',
             headers: {
                 'authorization': `Bearer ${localStorage.getItem('accessToken')}`
@@ -20,7 +20,7 @@ const ManageDetails = () => {
         const confirm = window.confirm("Are you sure want to delete?");
         if (confirm) {
             console.log('deleted id ', id);
-            fetch(`http://localhost:5000/tool/${id}`, {
+            fetch(`https://salty-scrubland-12544.herokuapp.com/tool/${id}`, {
                 method: 'DELETE',
             })
                 .then(res => res.json())

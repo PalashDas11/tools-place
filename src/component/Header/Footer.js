@@ -3,7 +3,7 @@ import { h6, Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
-        <footer className =" w-full h-screen bg-slate-50 ">
+        <footer className =" w-full  ">
             <div className='grid sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 p-5 custom-footer'>
                 <div>
                     <span className="footer-title">Services</span>

@@ -12,7 +12,7 @@ const CheckoutForm = ({ order }) => {
 
     const {_id, productPrice, customerName, customerEmail } = order;
     useEffect(() => {
-        fetch('http://localhost:5000/create-payment-intent', {
+        fetch('https://salty-scrubland-12544.herokuapp.com/create-payment-intent', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',
@@ -79,7 +79,7 @@ const CheckoutForm = ({ order }) => {
             orderId: _id,
             transactionId: paymentIntent.id
         }
-        fetch(`http://localhost:5000/order/${_id}`, {
+        fetch(`https://salty-scrubland-12544.herokuapp.com/order/${_id}`, {
             method: 'PATCH',
             headers: {
                 'content-type': 'application/json',
