@@ -1,39 +1,35 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { h6, Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
-        <footer style={{
-           
-            backgroundSize: 'cover',
-           
-        }} className="p-10">
-            <div className=' footer '>
+        <footer className =" w-full h-screen bg-slate-50 ">
+            <div className='grid sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 p-5 custom-footer'>
                 <div>
                     <span className="footer-title">Services</span>
-                    <Link to ="/" className="link link-hover">Branding</Link>
-                    <Link to ="/" className="link link-hover">Design</Link>
-                    <Link to ="/" className="link link-hover">Marketing</Link>
-                    <Link to ="/" className="link link-hover">Advertisement</Link>
+                    <h6> <Link to="/">Branding </Link></h6>
+                    <h6> <Link to="/">Design </Link></h6>
+                    <h6> <Link to="/">Marketing </Link></h6>
+                    <h6> <Link to="/">Advertisement </Link></h6>
                 </div>
                 <div>
                     <span className="footer-title">Company</span>
-                    <Link to ="/" className="link link-hover">About us</Link>
-                    <Link to ="/" className="link link-hover">Contact</Link>
-                    <Link to ="/" className="link link-hover">Jobs</Link>
-                    <Link to ="/" className="link link-hover">Press kit</Link>
+                    <h6> <Link to="/">About us</Link> </h6>
+                    <h6> <Link to="/">Contact </Link></h6>
+                    <h6> <Link to="/">Jobs </Link></h6>
+                    <h6> <Link to="/">Press </Link> kit</h6>
                 </div>
                 <div>
                     <span className="footer-title">Legal</span>
-                    <Link to ="/" className="link link-hover">Terms of use</Link>
-                    <Link to ="/" className="link link-hover">Privacy policy</Link>
-                    <Link to ="/" className="link link-hover">Cookie policy</Link>
+                    <h6> <Link to="/">Terms of use</Link> </h6>
+                    <h6> <Link to="/">Privacy policy</Link> </h6>
+                    <h6> <Link to="/">Cookie policy</Link> </h6>
                 </div>
                 <div>
                     <span className="footer-title">Need help? /quick contacts</span>
-                    <Link to ="/" className="link link-hover text-2xl text-primary">01707397056</Link>
-                    <Link to ="/" className="link link-hover"><small>Monday-Friday: 9:00-20:00</small></Link>
-                    <Link to ="/" className="link link-hover"><small>Saturday: 10:00-15:00</small></Link>
+                    <h6 className='text-xl text-primary'>01707397056</h6>
+                    <h6>Monday-Friday: 9:00-20:00</h6>
+                    <h6>Saturday: 10:00-15:00</h6>
                 </div>
             </div>
             <div className='my-10 text-center'>
