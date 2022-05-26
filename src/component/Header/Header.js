@@ -30,7 +30,7 @@ const Header = () => {
 
     </>
     return (
-        <div className="navbar bg-primary sticky top-0 z-50 ">
+        <div className="navbar bg-primary sticky top-0 z-50 px-5 ">
             <div className="navbar-start custom-nav ">
                 <div className="dropdown">
                     <label tabIndex="0" className="btn btn-ghost lg:hidden">
@@ -40,7 +40,7 @@ const Header = () => {
                         {menuItems}
                     </ul>
                 </div>
-                <div><a className="text-2xl font-bold ml-5">Tools Place</a></div>
+                <div><a className="text-3xl font-bold ml-5">Tools Place</a></div>
 
             </div>
             <div className="navbar-center hidden lg:flex">
