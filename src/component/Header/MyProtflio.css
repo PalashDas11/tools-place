@@ -1,0 +1,9 @@
+.protfolio{
+
+}
+.protfolio img{
+    margin: 0 auto;
+    max-width: 200px;
+    margin-left: 50px;
+    border-radius: 10px;
+}

@@ -16,6 +16,7 @@ import Review from './component/Dashboard/Review';
 import User from './component/Dashboard/User';
 import Footer from './component/Header/Footer';
 import Header from './component/Header/Header';
+import MyProtflio from './component/Header/MyProtflio';
 import Home from './component/Home/Home';
 import Login from './component/Login/Login';
 import NotFound from './component/NotFound/NotFound';
@@ -32,6 +33,7 @@ function App() {
       <Header></Header>
      <Routes>
        <Route path="/" element ={<Home/>}></Route>
+       <Route path="/protflio" element ={<MyProtflio/>}></Route>
        <Route path="/tools" element ={<Tools/>}></Route>
        <Route path="/toolDetails/:toolId" element ={
          <RequireAuth>
